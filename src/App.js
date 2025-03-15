@@ -3,12 +3,11 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import Resume from "./pages/Resume";
 import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio"> 
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
