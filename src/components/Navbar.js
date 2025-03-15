@@ -24,17 +24,17 @@ const Navbar = () => {
               <li className="px-4 py-2 bg-gray-700 font-semibold">📂 Capstone Files</li>
 
               {/* Project Documents */}
-              <li><a href="/F24_T48_Project_Summary.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">📜 Project Summary</a></li>
-              <li><a href="/F24_T48_Project_Vision.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">🎯 Project Vision</a></li>
-              <li><a href="/F24_T48_High_Level_Requirements.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">📑 High-Level Requirements</a></li>
-              <li><a href="/F24_T48_Technology_Requirements_Learning_Plan.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">🖥 Technology Requirements</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/F24_T48_Project_Summary.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">📜 Project Summary</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/F24_T48_Project_Vision.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">🎯 Project Vision</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/F24_T48_High_Level_Requirements.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">📑 High-Level Requirements</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/F24_T48_Technology_Requirements_Learning_Plan.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">🖥 Technology Requirements</a></li>
 
               {/* Planning & Reports */}
-              <li><a href="/W25_T48_Project Plan_v2.0.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">🗂 Project Plan</a></li>
-              <li><a href="/W25_T48_ProjectReport1.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">📊 Project Status Report</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/W25_T48_Project_Plan_v2.0.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">🗂 Project Plan</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/W25_T48_ProjectReport1.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">📊 Project Status Report</a></li>
 
               {/* Design & Mockups */}
-              <li><a href="/BizChats_Website.pdf" target="_blank" className="block px-4 py-2 hover:bg-gray-700">🎨 Wireframes & Mockups</a></li>
+              <li><a href={`${process.env.PUBLIC_URL}/BizChats_Website.pdf`} target="_blank" rel="noopener noreferrer" className="block px-4 py-2 hover:bg-gray-700">🎨 Wireframes & Mockups</a></li>
 
               {/* System Implementation - Redirects to Website */}
               <li>
