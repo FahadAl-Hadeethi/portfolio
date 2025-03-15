@@ -1,0 +1,9 @@
+# Ignore node modules and build files
+node_modules/
+build/
+.env
+.DS_Store
+npm-debug.log
+yarn-error.log
+.vscode/
+.idea/
