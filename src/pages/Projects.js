@@ -5,6 +5,7 @@ import mobileBizchatsImage from "../assets/mobilebizchats.png";
 import managementImage from "../assets/managment.png";
 import chatLiveImage from "../assets/live_chat.png";
 import weatherImage from "../assets/weather.png";
+import portfolioImage from "../assets/portfolio.png"; // Added Portfolio Image
 
 const projects = [
   {
@@ -46,6 +47,14 @@ const projects = [
     github: "https://github.com/FahadAl-Hadeethi/weather_app",
     liveDemo: "https://weather-app-ggzy.onrender.com",
     image: weatherImage,
+  },
+  {
+    title: "Personal Portfolio",
+    description: "A fully responsive portfolio website built using React.js, Tailwind CSS, and GitHub Pages. Showcases projects, skills, and experience.",
+    technologies: ["React", "Tailwind CSS", "GitHub Pages", "Framer Motion"],
+    github: "https://github.com/FahadAl-Hadeethi/portfolio",
+    liveDemo: "https://fahadal-hadeethi.github.io/portfolio/",
+    image: portfolioImage,
   },
 ];
 

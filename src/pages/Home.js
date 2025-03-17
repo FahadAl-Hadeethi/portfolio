@@ -22,7 +22,6 @@ const Home = () => {
                         <FaMapMarkerAlt className="mr-2" /> Toronto, Ontario
                     </p>
 
-
                     <p className="flex items-center mt-2 text-gray-300">
                         <FaClock className="mr-2" /> {new Date().toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: true })} (UTC -4:00)
                     </p>
@@ -35,30 +34,31 @@ const Home = () => {
                             <FaLinkedin className="text-2xl hover:text-blue-500" />
                         </a>
                     </div>
+
+                    {/* Resume & Cover Letter */}
                     <div className="flex justify-center gap-4 mt-6">
                         <a
-                            href="/Fahad_Al-Hadeethi_Resume.pdf"
+                            href={`${process.env.PUBLIC_URL}/Fahad_Al-Hadeethi_Resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-2 text-white font-semibold bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-md 
-                   transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-blue-700"
+               transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-blue-700"
                         >
                             📄 View Resume
                         </a>
                         <a
-                            href="/Fahad_Al-Hadeethi_CoverLetter.pdf"
+                            href={`${process.env.PUBLIC_URL}/Fahad_Al-Hadeethi_CoverLetter.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-2 text-white font-semibold bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg shadow-md 
-                   transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-gray-800 hover:to-gray-900"
+               transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-gray-800 hover:to-gray-900"
                         >
                             📝 View Cover Letter
                         </a>
                     </div>
-
-
                 </div>
             </div>
+
 
             {/* Philosophy/Statement of Career Goals Section */}
             <div className="mt-10">
