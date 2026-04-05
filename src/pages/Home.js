@@ -35,30 +35,20 @@ const Home = () => {
                         </a>
                     </div>
 
-                    {/* Resume & Cover Letter */}
+                    {/* Resume */}
                     <div className="flex justify-center gap-4 mt-6">
                         <a
                             href={`${process.env.PUBLIC_URL}/Fahad_Al-Hadeethi_Resume.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="px-6 py-2 text-white font-semibold bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-md 
-               transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-blue-700"
+                            transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-blue-600 hover:to-blue-700"
                         >
                             📄 View Resume
-                        </a>
-                        <a
-                            href={`${process.env.PUBLIC_URL}/Fahad_Al-Hadeethi_CoverLetter.pdf`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-6 py-2 text-white font-semibold bg-gradient-to-r from-gray-700 to-gray-800 rounded-lg shadow-md 
-               transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:from-gray-800 hover:to-gray-900"
-                        >
-                            📝 View Cover Letter
                         </a>
                     </div>
                 </div>
             </div>
-
 
             {/* Philosophy/Statement of Career Goals Section */}
             <div className="mt-10">
@@ -79,57 +69,62 @@ const Home = () => {
                 </p>
             </div>
 
-
             {/* Education Section */}
             <div className="mt-10">
                 <h2 className="text-xl font-bold border-b-2 border-blue-500 pb-2">Education</h2>
-                <p className="mt-2 text-gray-300">
-                    <strong>George Brown College</strong> - Advanced Diploma, Computer Programming and Analysis
-                </p>
-                <p>Graduation: April 2025 | <strong>GPA:</strong> 3.55/4.0</p>
+
+                <div className="mt-4">
+                    <p className="text-gray-300">
+                        <strong>McMaster University</strong> - Software Engineering Technology
+                    </p>
+                    <p className="text-gray-400">Sep 2025 - Present</p>
+                </div>
+
+                <div className="mt-4">
+                    <p className="text-gray-300">
+                        <strong>George Brown College</strong> - Advanced Diploma, Computer Programming and Analysis
+                    </p>
+                    <p className="text-gray-400">Sep 2022 - Apr 2025 | <strong>GPA:</strong> 3.57/4.0</p>
+                </div>
             </div>
 
             {/* Experience Section */}
             <div className="mt-10">
                 <h2 className="text-xl font-bold border-b-2 border-blue-500 pb-2">Experience</h2>
 
-                {/* BizChats Web & Mobile */}
                 <div className="mt-4 p-4 bg-gray-800 rounded-lg shadow-lg">
                     <h3 className="text-lg font-bold">Lead Developer - BizChats (Web & Mobile)</h3>
                     <p className="text-gray-400">Jan 2024 - Present</p>
                     <ul className="list-disc ml-4 mt-2 text-gray-300">
-                        <li>Designed and developed a **real-time communication platform** for businesses and educational institutions.</li>
+                        <li>Designed and developed a real-time communication platform for businesses and educational institutions.</li>
                         <li>Developed authentication, role-based access control, and file storage integrations.</li>
-                        <li>Utilized **React, Node.js, React Native, AWS (S3, Amplify), MySQL, and WebSockets** for full-stack functionality.</li>
-                        <li>Implemented **scalable microservices architecture** and optimized database performance.</li>
+                        <li>Utilized React, Node.js, React Native, AWS (S3, Amplify), MySQL, and WebSockets for full-stack functionality.</li>
+                        <li>Implemented scalable microservices architecture and optimized database performance.</li>
                     </ul>
                 </div>
 
-                {/* Employee Management System */}
                 <div className="mt-4 p-4 bg-gray-800 rounded-lg shadow-lg">
                     <h3 className="text-lg font-bold">Developer - Employee Management System</h3>
                     <p className="text-gray-400">Feb 2024 - Present</p>
                     <ul className="list-disc ml-4 mt-2 text-gray-300">
-                        <li>Developed a **full-stack HR application** to streamline employee record-keeping and management.</li>
-                        <li>Implemented secure **authentication and role-based access control** for admin and employees.</li>
-                        <li>Integrated RESTful APIs using **React, Node.js, and MongoDB** for seamless data handling.</li>
-                        <li>Enhanced **UI/UX** with responsive design and interactive dashboards.</li>
+                        <li>Developed a full-stack HR application to streamline employee record-keeping and management.</li>
+                        <li>Implemented secure authentication and role-based access control for admin and employees.</li>
+                        <li>Integrated RESTful APIs using React, Node.js, and MongoDB for seamless data handling.</li>
+                        <li>Enhanced UI/UX with responsive design and interactive dashboards.</li>
                     </ul>
                 </div>
 
-                {/* Real-Time Live Chat Project */}
                 <div className="mt-4 p-4 bg-gray-800 rounded-lg shadow-lg">
                     <h3 className="text-lg font-bold">Developer - LiveRoom Chat</h3>
                     <p className="text-gray-400">Mar 2024 - Present</p>
                     <ul className="list-disc ml-4 mt-2 text-gray-300">
-                        <li>Designed and implemented a **real-time messaging application** with private and group chat functionalities.</li>
-                        <li>Developed real-time WebSocket communication using **Socket.io, React, and Node.js**.</li>
-                        <li>Implemented **user authentication, message history storage, and online status tracking**.</li>
+                        <li>Designed and implemented a real-time messaging application with private and group chat functionalities.</li>
+                        <li>Developed real-time WebSocket communication using Socket.io, React, and Node.js.</li>
+                        <li>Implemented user authentication, message history storage, and online status tracking.</li>
                         <li>Optimized server performance and scalability for handling concurrent users.</li>
                     </ul>
                 </div>
             </div>
-
 
             {/* Skills Section */}
             <div className="mt-10">
@@ -154,36 +149,32 @@ const Home = () => {
             <div className="mt-10">
                 <h2 className="text-xl font-bold border-b-2 border-blue-500 pb-2">Currently Working On</h2>
 
-                {/* BizChat Web */}
                 <div className="mt-4 p-4 bg-gray-800 rounded-lg shadow-lg">
                     <h3 className="text-lg font-bold">BizChat Web Application</h3>
                     <p className="text-gray-400">
-                        Enhancing the **BizChat** platform, a modern web-based collaboration and messaging tool designed for businesses and educational institutions.
+                        Enhancing the BizChat platform, a modern web-based collaboration and messaging tool designed for businesses and educational institutions.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-gray-300">
                         <li>Integrating advanced team communication features.</li>
-                        <li>Enhancing the UI/UX using **React.js** and **Tailwind CSS**.</li>
-                        <li>Optimizing database performance with **MySQL** on AWS.</li>
+                        <li>Enhancing the UI/UX using React.js and Tailwind CSS.</li>
+                        <li>Optimizing database performance with MySQL on AWS.</li>
                         <li>Implementing role-based access and user authentication.</li>
                     </ul>
                 </div>
 
-                {/* BizChat Mobile */}
                 <div className="mt-4 p-4 bg-gray-800 rounded-lg shadow-lg">
                     <h3 className="text-lg font-bold">BizChat Mobile Application</h3>
                     <p className="text-gray-400">
-                        Developing a **React Native** version of **BizChat** to ensure seamless cross-platform communication and accessibility.
+                        Developing a React Native version of BizChat to ensure seamless cross-platform communication and accessibility.
                     </p>
                     <ul className="list-disc ml-4 mt-2 text-gray-300">
-                        <li>Building with **React Native** and **Expo** for iOS & Android.</li>
-                        <li>Implementing real-time messaging with **Socket.io** and WebSockets.</li>
+                        <li>Building with React Native and Expo for iOS & Android.</li>
+                        <li>Implementing real-time messaging with Socket.io and WebSockets.</li>
                         <li>Enhancing push notifications and offline functionality.</li>
                         <li>Ensuring seamless API integration with the web version.</li>
                     </ul>
                 </div>
             </div>
-
-
         </div>
     );
 };
